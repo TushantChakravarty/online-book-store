@@ -1,0 +1,17 @@
+<h2>Recently Added</h2>
+<div>
+    <div style="display: flex; flex-direction:row; margin: auto;">
+        <% books.forEach(book => { %>
+         <div style="display: flex; flex-direction:column; margin: auto;">
+           <img height="150" width="100" src="<%= book.coverImagePath %>">
+            Bookname :<%= book.title %><br>
+            author :<%= book.author %><br>
+          
+             description :<%= book.description %><br>
+             <button id="btn">Buy</button>
+             <br>
+          </div>
+       
+        <% }) %>
+       </div>
+</div>
